@@ -32,14 +32,15 @@ Gatsby provides a number of starter projects on their site. We wont be using tho
 
 You can check the Gatsby Starters here: <https://www.gatsbyjs.org/starters/?v=2> for when you need to get a project up and running quickly.
 
-I am providing you a few starter files, includin a package.json detailing all the packages we need for today.
+I am providing you a few starter files, including a package.json detailing all the packages we need for today.
 
 Go ahead and cd into `gatsby-site` and run `npm install`.
 
+Then to start our application we type `npm start`.
 
 ## Questions
 
-Feel free to ask questions at any time!
+Feel free to ask questions at any time! My style is pretty off the cuff so I'm happy to stop and go down the roads we need to.
 
 ## Gatsby 101
 
