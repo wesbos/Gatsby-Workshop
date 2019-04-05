@@ -1,0 +1,22 @@
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--black);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.nav a {
+  color: white;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  border-bottom:10px solid #353535;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.nav a.active {
+  border-color: var(--yellow);
+}

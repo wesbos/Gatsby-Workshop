@@ -1,0 +1,11 @@
+{
+  "git.ignoreLimitWarning": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    // gatsby
+    "**/public": true,
+    "**/.cache": true
+  }
+}
