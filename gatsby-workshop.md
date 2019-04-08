@@ -23,11 +23,19 @@ Prerequisites:
 * Beginner to Intermediate knowledge of React.js — State, components, context, props. You should have built at least 3 things with React.js before.
 * Familiarity with package managers npm or yarn
 
-What to bring:
+## What to bring:
 
 1. A laptop with the latest version of <https://nodejs.org> installed.
 1. A text editor like VS Code
 1. A terminal
-1. A burning hunger to learn some neat stuff!
 
 
+## Pre-workshop Prep
+
+You should have the latest version of Node.js and npm installed on your computer.
+
+Go ahead and download the starter files and notes from <https://github.com/wesbos/gatsby-workshop>. I recommend downloading these files and not forking the repo as we will be creating a repo as part of the workshop.
+
+Then, cd into the `gatsby-site` folder and run `npm install`. If you run into any issues, shoot me an email wes@wesbos.com or show up ~25 mins early to the workshop and we can make sure you are in a good spot to start the workshop.
+
+That's it! See you at the workshop.
