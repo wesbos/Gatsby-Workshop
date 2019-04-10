@@ -152,7 +152,7 @@ export default function Nav() {
 }
 ```
 
-Gatsby Link component is the most common way to move from one page to another. It accepted a few props including `to`, `activeClassName` and `activeStyle`.
+Gatsby Link component is the most common way to move from one page to another. It accepts a few props including `to`, `activeClassName` and `activeStyle`.
 
 Let's take a look at the docs and answer a few questions:
 
