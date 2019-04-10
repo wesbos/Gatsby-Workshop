@@ -107,7 +107,7 @@ Normally we would write our css like this:
 Now instead of putting a class of card onto a div, we create a styled div with those same styles:
 
 ```js
-import styled from 'styled-comoponents';
+import styled from 'styled-components';
 
 const CardStyles = styled.div`
   padding: 10px;
