@@ -60,7 +60,7 @@ Gatsby also includes a set of APIs for dynamically creating pages &mdash; more s
 
 ### Data Sources
 
-At i's base, you could just have a Gatsby site that has static pages. But, you likely have data that needs to be pulled in to populate the site.
+At its base, you could just have a Gatsby site that has static pages. But, you likely have data that needs to be pulled in to populate the site.
 
 Data can come from anywhere:
 
