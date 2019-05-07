@@ -1,6 +1,6 @@
 # Images
 
-One of the best things about Gatsby is that because everything (text, images, files, data) goes through gatsby, we're able to use plugins to massage that data before it gets outputted on the page.
+One of the best things about Gatsby is that because everything (text, images, files, data...) goes through gatsby, we're able to use plugins to massage that data before it gets outputted on the page.
 
 A huge use case for this is with images.
 
@@ -8,8 +8,8 @@ For a speedy website, images may need to be:
 
 * compressed
 * converted to different formats
-* Resized
-* Lazy loaded
+* resized
+* lazy loaded
 
 These things are great for perf, but hard to do on most sites. Gatsby makes it easy!
 
@@ -28,11 +28,13 @@ That will give you a path to the statically generated image, which can be used l
 <img src={dog} alt="Cute Pup" />
 ```
 
-Now this image is still huge! So we want to use a plugin called [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/), which in turn will use a package called sharp to resize, compress and provide other image benefits.
+Now this image is still huge! So we want to use a plugin called [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/), which in turn will use a package called `sharp` to resize, compress, and provide other image benefits.
 
-Now does Gatsby know about our images? not yet! We need to source them, and then let a plugin do the heavy lifting. Add these to your plugins array:
+Now does Gatsby know about our images? Not yet! We need to source them, and then let a plugin do the heavy lifting. Add these to your plugins array:
 
 ```js
+// gatsby-config.js
+
 {
   resolve: `gatsby-source-filesystem`,
   options: {
@@ -46,21 +48,23 @@ Now does Gatsby know about our images? not yet! We need to source them, and then
 
 Now here is where Gatsby falls short at the moment.
 
-If you want to display an image that has been transformed, we need to access it like we do everything else in Gatsby - GraphQL Queries. Then, use the Gatsby-image `Img` component to display it.
+If you want to display an image that has been transformed, we need to access it like we do everything else in Gatsby: GraphQL Queries. Then, use the Gatsby-image `Img` component to display it.
 
 So in order to display an image, we need to write a query like the one in the [docs](https://www.gatsbyjs.org/packages/gatsby-image/). 😖😖😖
 
 The one in the docs is a page query. The other type of query in Gatsby is a "static query" which can be done in any component.
 
-The downside to static queries is that they aren't dynamic, meaning you can't pass it variables! Like an image src.
+The downside to static queries is that they aren't dynamic. That is,  you can't pass it variables: e.g. an `<img>` src.
 
 More info here: <https://spectrum.chat/gatsby-js/general/using-variables-in-a-staticquery~abee4d1d-6bc4-4202-afb2-38326d91bd05>
 
-So - the best approach right now is to make our own component that will query all images, and then return the one we are looking for.
+The best approach right now is to make our own component that will query all images, and then return the one we are looking for.
 
 Make a new file in `components/Img.js`:
 
 ```js
+// Img.js
+
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -111,6 +115,8 @@ Put a few images into a tip:
 Then we need to tell our `gatsby-mdx` how to handle the images in our `gatsby-config.js` file. This isn't a new plugin, but we modify the `gatsby-mdx`:
 
 ```js
+// gatsby-config.js
+
     {
       resolve: 'gatsby-mdx',
       options: {
