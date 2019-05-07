@@ -1,6 +1,6 @@
 # Sourcing Your Own Data
 
-So - how do we get our own data into the API? What if there isn't a source plugin available for what we want?
+How do we get our own data into the API? What if there isn't a source plugin available for what we want?
 
 This is likely to happen, so let's do an example:
 
@@ -12,6 +12,8 @@ This is likely to happen, so let's do an example:
 
 
 ```js
+// gatsby-node.js
+
 exports.sourceNodes = async function({ actions, createNodeId, createContentDigest }) {
   await sourceUsers({actions, createNodeId, createContentDigest});
 }
