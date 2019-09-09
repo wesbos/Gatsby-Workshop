@@ -94,10 +94,7 @@ export const query = graphql`
   query($id: String!) {
     mdx(id: { eq: $id }) {
       id
-      code {
-        body
-        scope
-      }
+      body
       frontmatter {
         slug
         title
@@ -110,13 +107,15 @@ export const query = graphql`
 Then our Template looks like this:
 
 ```jsx
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+// ...
 export default function Tip({ data, pageContext }) {
   const tip = data.mdx;
   return (
     <Layout>
       <div>
         <h2>{tip.frontmatter.title}</h2>
-        <MDXRenderer>{tip.code.body}</MDXRenderer>
+        <MDXRenderer>{tip.body}</MDXRenderer>
       </div>
     </Layout>
   );
@@ -126,7 +125,7 @@ export default function Tip({ data, pageContext }) {
 Notice a few things:
 
 1. The data comes in via props
-1. tip.code.body goes inside a `MDXRenderer` tag in order to see the rendered markdown
+1. tip.body goes inside a `MDXRenderer` tag in order to see the rendered markdown.
 
 
 ## Exercise:

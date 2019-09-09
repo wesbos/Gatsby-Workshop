@@ -96,9 +96,6 @@ export const query = graphql`
     allMdx {
       nodes {
         id
-        code {
-          body
-        }
         frontmatter {
           slug
           title
