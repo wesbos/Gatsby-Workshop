@@ -44,7 +44,7 @@ options: {
 },
 },
 ```
-At this point, Gatsby only knows about these as raw files&mdash;not as pages, not even as markdown.
+At this point, Gatsby only knows about these as raw files—not as pages, not even as markdown.
 
 We can see this by writing a query:
 
@@ -92,9 +92,9 @@ Now we can make a new page called `tips.js` which will be a listing of all our t
 
 Now how do we access the tips? Previously we learned about `StaticQuery`, which can be used in _any_ component to query site data — the downside being that it cannot be dynamic.
 
-Now we learn about Page queries. Each high level page can export a query that will then run when the page is built. These queries can be dynamic&mdash;which means we can pass things like a slug or an ID to the query.
+Now we learn about Page queries. Each high level page can export a query that will then run when the page is built. These queries can be dynamic—which means we can pass things like a slug or an ID to the query.
 
-Each Gatsby page has the ability to export a query&mdash;commonly named `query` or `pageQuery` which is a GraphQL query. When a page is built, Gatsby will run this query and make the data available via `props.data`.
+Each Gatsby page has the ability to export a query—commonly named `query` or `pageQuery` which is a GraphQL query. When a page is built, Gatsby will run this query and make the data available via `props.data`.
 
 
 ```js

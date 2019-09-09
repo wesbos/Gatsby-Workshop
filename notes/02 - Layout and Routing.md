@@ -133,7 +133,7 @@ import { Helmet } from 'react-helmet';
 </Helmet>
 ```
 
-Any tags that come later&mdash;in lower components&mdash;will overwrite these. Many developers like to build a custom `<Meta>` component to hold the many things that a head might include.
+Any tags that come later—in lower components—will overwrite these. Many developers like to build a custom `<Meta>` component to hold the many things that a head might include.
 
 # Routing
 

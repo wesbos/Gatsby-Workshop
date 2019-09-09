@@ -2,7 +2,7 @@
 
 When you are ready to deploy your website, we run `npm run build`. This will generate a `public` folder that contains all the static files needed to deploy the website.
 
-You'll notice that it kicks out both static `.html` files, as well as `.js` files. This is because while Gatsby renders the static HTMLs for speed, it still functions as a React application once that HTML is loaded into the browser &mdash; much like SSR works.
+You'll notice that it kicks out both static `.html` files, as well as `.js` files. This is because while Gatsby renders the static HTMLs for speed, it still functions as a React application once that HTML is loaded into the browser — much like SSR works.
 
 # Deploying
 

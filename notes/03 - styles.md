@@ -28,7 +28,7 @@ Just like `normalize.css`, If we just import those into `Layout.js`, they will b
 import './styles/global.css';
 ```
 
-When the site is built, Gatsby will detect what is called Critical CSS&mdash;_CSS styles required to render a given page_&mdash;and load it inside a `<style>` tag before the content. The rest of the CSS can then be loaded async and doesn't block the loading of the rest of the website. This is just one of the many ways Gatsby makes your website fast out of the box.
+When the site is built, Gatsby will detect what is called Critical CSS—_CSS styles required to render a given page_—and load it inside a `<style>` tag before the content. The rest of the CSS can then be loaded async and doesn't block the loading of the rest of the website. This is just one of the many ways Gatsby makes your website fast out of the box.
 
 ## CSS Modules
 

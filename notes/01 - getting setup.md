@@ -24,7 +24,7 @@ Today we are going to build a Gatsby website from the ground up. We are going to
 
 ## These Notes
 
-These notes aren't comprehensive &mdash; more of a landing spot to grab the code if you get stuck. We will try and code as much of the code by hand, but if you misspell something or misplaced a curly bracket, feel free to grab the code from the notes or from the finished files.
+These notes aren't comprehensive — more of a landing spot to grab the code if you get stuck. We will try and code as much of the code by hand, but if you misspell something or misplaced a curly bracket, feel free to grab the code from the notes or from the finished files.
 
 ## Starter Files
 
@@ -56,7 +56,7 @@ At its core, Gatsby has pages. You know what pages are, right? Want a page calle
 
 Gatsby also includes a Router, which by using their `<Link to="/about">About</Link>` component, will allow you to both pre-load that page as well as use HTML5 pushstate to change the page without a browser reload.
 
-Gatsby also includes a set of APIs for dynamically creating pages &mdash; more soon.
+Gatsby also includes a set of APIs for dynamically creating pages — more soon.
 
 ### Data Sources
 
@@ -70,7 +70,7 @@ Data can come from anywhere:
 
 Since Gatsby is generated at build time, the data isn't loaded _when the user loads the page_. The data is loaded _when you generate the page_. The benefit is that it's super fast for users, but the downside is that you need to have all your data at build time.
 
-So&mdash;once you have your data&mdash;how do you get it into Gatsby? Answer: via _Source plugins_. There are dozens of source plugins available for your data type.
+So—once you have your data—how do you get it into Gatsby? Answer: via _Source plugins_. There are dozens of source plugins available for your data type.
 
 Once this data is available from sources, you can also _transform_ it: _e.g. transforming markdown to HTML, compressing images, generating offline views, making an RSS feed..., you name it_!
 

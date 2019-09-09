@@ -51,6 +51,7 @@ At this point, we should see the data in our GraphQL db:
     nodes {
       name
       phone
+      id
     }
   }
 }
