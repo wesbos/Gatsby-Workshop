@@ -4,6 +4,8 @@ Gatsby doesn't have a prescribed way of creating layouts like Next.js has `_app.
 
 While Gatsby _does_ have the concept of themes currently in testing, it is nothing extra past what we learn today. Just the ability to take everything we learn today and put it into a re-usable, composable package.
 
+> Side Note: Listen to [this Podcast](https://syntax.fm/show/150/gatsby-themes) where we talk about the ideas and implementation behind themes.
+
 Let's go ahead and make a `components/Layout.js` component.
 
 At it's simplest it looks like this:

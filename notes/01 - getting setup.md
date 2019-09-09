@@ -80,7 +80,7 @@ Finally all this data is made available to your website via a single GraphQL API
 
 So, let's make sure we have things up and running!
 
-Let's mak a new page called `index.js`, `about.js` and `tips.js`. These pages just need to default export a React component (any type will do)!
+Let's mak a new page called `index.js` and `about.js`. These pages just need to default export a React component (any type will do)!
 
 
 ```js

@@ -36,7 +36,6 @@ Another way to handle CSS in Gatsby is to use something called CSS modules.
 
 CSS modules allow us to code specific classes in a `.css` file, and then import them into our React components. The benefit of this is that the styles will have uniquely generated class names and therefore be scoped to the component where they are used.
 
-
 Some good examples on CSS modules are available here: <https://www.javascriptstuff.com/css-modules-by-example/>
 
 ## Sass
@@ -147,5 +146,5 @@ Pick one (or all) of the above methods and style:
 1. The Layout
 
 
-Feel free to steal the finished styles from my site.
+Feel free to steal the finished styles from my site. I've provided you with an example in each way.
 

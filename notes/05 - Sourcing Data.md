@@ -60,13 +60,13 @@ query {
 }
 ```
 
-Now we need another plugin to tell Gatsby what to do with this file type! Add this to your plugins array as well. Note that I've already run `npm install gatsby-mdx` for you.
+Now we need another plugin to tell Gatsby what to do with this file type! Add this to your plugins array as well. Note that I've already run `npm install gatsby-plugin-mdx` for you.
 
 ```js
 // gatsby-config.js
 
 {
-  resolve: 'gatsby-mdx',
+  resolve: 'gatsby-plugin-mdx',
 }
 ```
 
@@ -141,4 +141,4 @@ export default function TipsPage({ data }) {
 
 We should now be seeing a list of tips. But, if you click on a tip, we hit a 404 page! OH no!
 
-This is because Ggatsby doesn't know about these individual pages yet. Let's jump into that in the next section.
+This is because Gatsby doesn't know about these individual pages yet. Let's jump into that in the next section.

@@ -108,17 +108,17 @@ Now if you want to have images in your mdx content, it's a little bit easier. We
 Put a few images into a tip:
 
 ```mdx
-![](../images/dog.jpg)
-![](../images/cabin.jpg)
+![Cute Pup](../images/dog.jpg)
+![Nice Cabin](../images/cabin.jpg)
 ```
 
-Then we need to tell our `gatsby-mdx` how to handle the images in our `gatsby-config.js` file. This isn't a new plugin, but we modify the `gatsby-mdx`:
+Then we need to tell our `gatsby-plugin-mdx` how to handle the images in our `gatsby-config.js` file. This isn't a new plugin, but we modify the `gatsby-plugin-mdx`:
 
 ```js
 // gatsby-config.js
 
     {
-      resolve: 'gatsby-mdx',
+      resolve: 'gatsby-plugin-mdx',
       options: {
         root: __dirname,
         gatsbyRemarkPlugins: [
