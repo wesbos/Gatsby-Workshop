@@ -32,6 +32,8 @@ Now this image is still huge! So we want to use a plugin called [gatsby-image](h
 
 Now does Gatsby know about our images? Not yet! We need to source them, and then let a plugin do the heavy lifting. Add these to your plugins array:
 
+> BUG ALERT!: There is a weird bug with Gatsby right now that will break the site if `gatsby-transformer-sharp` is in the package.json before we use it. So before the next step we need to run `npm uninstall gatsby-transformer-sharp
+
 ```js
 // gatsby-config.js
 
