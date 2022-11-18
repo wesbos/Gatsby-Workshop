@@ -12,7 +12,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.4.5",
+    "@mdx-js/loader": "^1.6.22",
     "@mdx-js/mdx": "^1.4.5",
     "@mdx-js/tag": "^0.20.3",
     "gatsby": "^2.15.14",
